@@ -61,7 +61,7 @@ public  class WorkerDao {
     }
 
     public Worker getById(int id) {
-        String sql = "SELECT * FROM students " +
+        String sql = "SELECT * FROM workers " +
                 "WHERE id = ?";
         Worker worker = new Worker();
         try (Connection connection = getConnection()) {
